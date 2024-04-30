@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1{
+    width: 400px;
+    height: 400px;
+    background-color: violet;
+}
+
+.box2{
+    height: 400px;
+    width: 400px;
+    background-color: aquamarine;
+}
+
+.box1   p{
+    color: rgb(0, 255, 0);
+}
+
+p{
+    color: blue;
+}
+
+.msg{
+    font-size: 20px;
+    color: blue;
+}
+
+.info{
+    font-size: 40px;
+    color: goldenrod;
+}
+
+.msg.info{
+    background-color: blueviolet;
+}
+
+.box-tamanho{
+    width: 200px;
+    height: 80px;
+    background-color: red;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in;
+}
+
+.box-tamanho:hover{
+    width: 600px;
+    background-color: blue;
+}
+
+.girar{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    transition: all 2000ms ease-in;
+}
+
+.girar:hover{
+    transform: rotate(360deg);
+}
+
+.galeria{
+    width: 250px;
+    height: 250px;
+    background-color: brown;
+    transition: transform 500ms ease-out;
+}
+
+.galeria:hover{
+    transform: scale(1.2);
+}
