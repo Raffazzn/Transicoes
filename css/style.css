@@ -72,3 +72,35 @@ p{
 .galeria:hover{
     transform: scale(1.2);
 }
+
+.menu{
+    background-color: black;
+    height: 150px;
+}
+
+.menu .lista{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+
+.menu .lista .item{
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu .lista .item::before{
+    content: "";
+    height: 5px;
+    width: 0%;
+    position: absolute;
+    bottom: -5px;
+    background-color: red;
+    transition: all 500ms ease-in;
+}
+
+.menu .lista .item:hover::before{
+    width: 100%;
+}
